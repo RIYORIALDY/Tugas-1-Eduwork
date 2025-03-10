@@ -3,165 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Biodata</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        .menu {
-            background-color: #333;
-            overflow: hidden;
-        }
-        .menu a {
-            float: left;
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-        .menu a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-        .header {
-            display: flex;
-            align-items: center;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
-        .header img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            margin-left: 20px;
-        }
-        .header h1 {
-            margin: 0;
-        }
-        .biodata {
-            padding: 20px;
-        }
-        .biodata table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        .biodata th, .biodata td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-        .biodata th {
-            background-color: #f2f2f2;
-        }
-        .portfolio {
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
-        .portfolio h2 {
-            margin-top: 0;
-        }
-        .github-instructions {
-            padding: 20px;
-        }
-        .github-instructions h2 {
-            margin-top: 0;
-        }
-        .github-instructions pre {
-            background-color: #f8f8f8;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-    </style>
+    <title>Contoh Halaman Contoh</title>
 </head>
 <body>
+    <!-- Section 1: Menu -->
+    <table border="1" width="100%">
+        <tr>
+            <td align="center"><a href="#section2">Header</a></td>
+            <td align="center"><a href="#section3">Biodata</a></td>
+            <td align="center"><a href="#section4">Portofolio</a></td>
+        </tr>
+    </table>
 
-    <!-- Menu Section -->
-    <div class="menu">
-        <a href="#home">Beranda</a>
-        <a href="#biodata">Biodata</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#github">Instruksi GitHub</a>
-    </div>
+    <!-- Section 2: Judul di Kiri dan Gambar di Kanan -->
+    <table border="1" width="100%" id="section2">
+        <tr>
+            <td width="50%" align="left" valign="top">
+                <h1>Selamat Datang Di Website Saya</h1>
+                <p>Ini adalah contoh header dengan dua kolom. Kolom kiri berisi teks seperti ini.</p>
+                <button>Pelajari lebih lanjut</button>
+            </td>
+            <td width="50%" align="center" valign="middle">
+                <img src="https://via.placeholder.com/200" alt="Gambar Placeholder">
+            </td>
+        </tr>
+    </table>
 
-    <!-- Title Section -->
-    <div class="header">
-        <h1>Profil Biodata</h1>
-        <img src="image.png" alt="Profil">
-    </div>
+    <!-- Section 3: Biodata dengan 6 Box -->
+    <table border="1" width="100%" id="section3">
+        <tr>
+            <td colspan="6" align="center">
+                <h2>About Me</h2>
+                <p>A brief introduction about myself</p>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">Full Name</td>
+            <td align="center">Educatiom</td>
+            <td align="center">Perkerjaan</td>
+        </tr>
+        <tr>
+            <td align="center">Contact</td>
+            <td align="center">Hobby</td>
+            <td align="center">Alamat</td>
+        </tr>
+    </table>
 
-    <!-- Biodata Section -->
-    <div class="biodata" id="biodata">
-        <h2>Biodata</h2>
-        <table>
-            <tr>
-                <th>Informasi</th>
-                <th>Detail</th>
-            </tr>
-            <tr>
-                <td>Nama</td>
-                <td>Riyo Rialdy Urda</td>
-            </tr>
-            <tr>
-                <td>Tanggal Lahir</td>
-                <td>13 July 1999</td>
-            </tr>
-            <tr>
-                <td>Alamat</td>
-                <td>Kota Batam</td>
-            </tr>
-            <tr>
-                <td>Email</td>
-                <td>riorialdy13@gmail.com</td>
-            </tr>
-            <tr>
-                <td>Telepon</td>
-                <td>+62</td>
-            </tr>
-            <tr>
-                <td>Pekerjaan</td>
-                <td>Data Science</td>
-            </tr>
-        </table>
-    </div>
-
-    <!-- Portfolio Section -->
-    <div class="portfolio" id="portfolio">
-        <h2>Portfolio</h2>
-        <ul>
-            <li>Proyek 1: Deskripsi singkat proyek pertama.</li>
-            <li>Proyek 2: Deskripsi singkat proyek kedua.</li>
-            <li>Proyek 3: Deskripsi singkat proyek ketiga.</li>
-        </ul>
-    </div>
-
-    <!-- GitHub Instructions Section -->
-    <div class="github-instructions" id="github">
-        <h2>Instruksi GitHub</h2>
-        <h3>Membuat Repositori GitHub</h3>
-        <ol>
-            <li>Buka <a href="https://github.com" target="_blank">GitHub</a> dan masuk ke akun Anda.</li>
-            <li>Klik tombol "+" di sudut kanan atas dan pilih "New repository".</li>
-            <li>Beri nama repositori dan tambahkan deskripsi jika diperlukan.</li>
-            <li>Pilih opsi "Public" atau "Private" sesuai kebutuhan.</li>
-            <li>Klik tombol "Create repository".</li>
-        </ol>
-        <h3>Menginisialisasi Repositori Lokal</h3>
-        <pre>
-$$git init$$
-$$git add .$$
-$$git commit -m "Initial commit"$$
-        </pre>
-        <h3>Mendorong Kode ke GitHub</h3>
-        <pre>
-$$git remote add origin https://github.com/username/nama-repositori.git$$
-$$git branch -M main$$
-$$git push -u origin main$$
-        </pre>
-    </div>
-
+    <!-- Section 4: Portofolio -->
+    <table border="1" width="100%" id="section4">
+        <tr>
+            <td colspan="2" align="center"><h2>Portofolio</h2></td>
+        </tr>
+        <tr>
+            <td align="center" valign="top">
+                <img src="https://via.placeholder.com/200" alt="Gambar Portofolio 1">
+                <h3>proyek 1</h3>
+                <p>Deskripsi proyek 1</p>
+            </td>
+            <td align="center" valign="top">
+                <img src="https://via.placeholder.com/200" alt="Gambar Portofolio 2">
+                <h3>proyek 2</h3>
+                <p>Deskripsi proyek 2</p>
+            </td>
+        </tr>
+        <tr>
+            <td align="center" valign="top">
+                <img src="https://via.placeholder.com/200" alt="Gambar Portofolio 3">
+                <h3>proyek 3</h3>
+                <p>Deskripsi proyek 3</p>
+            </td>
+            <td align="center" valign="top">
+                <img src="https://via.placeholder.com/200" alt="Gambar Portofolio 4">
+                <h3>proyek 4</h3>
+                <p>Deskripsi proyek 4</p>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>
